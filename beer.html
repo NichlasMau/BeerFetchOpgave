@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cool Beers</title>
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container mt-4">
+  <h2>Cool Beers</h2>
+  <input type="number" id="filter-abv" placeholder="Enter ABV value">
+  <button id="abv-btn" class="btn btn-secondary">Show only beers with ABV above</button>
+  <table class="table">
+    <thead>
+    <tr>
+      <th>Name</th>
+      <th>Tagline</th>
+      <th>ABV</th>
+      <th>IBU</th>
+    </tr>
+    </thead>
+    <tbody id="tbl1"></tbody>
+  </table>
+</div>
+
+<!-- Include jQuery and your JavaScript file -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="beer.js"></script>
+</body>
+</html>
